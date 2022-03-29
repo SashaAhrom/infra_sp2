@@ -6,15 +6,15 @@
 ### Технологии
 Python 3.7
 Django 2.2.19
-### Запуск проекта в dev-режиме
-- Установите и активируйте виртуальное окружение
-- Установите зависимости из файла requirements.txt
+### Запуск локального проекта
 ```
-pip install -r requirements.txt
+- В папке infra выполните команду:
 ```
-- В папке с файлом manage.py выполните команду:
+docker-compose up -d --build 
 ```
-python3 manage.py runserver
+docker-compose exec web python manage.py migrate
+```
+docker-compose exec web python manage.py collectstatic --no-input
 ```
 ### Авторы
-Андрей, Стёпа, Лера и Максим
+Александр, Валентин, Игорь
