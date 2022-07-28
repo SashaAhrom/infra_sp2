@@ -1,25 +1,19 @@
-# Учебный проект
-### Описание
+# infra_sp2(educational project)
+## Description
 ```
-Проект собирает отзывы пользователей на произведения.
+api_yamdb project expands to Docker
 ```
-Произведения делятся на категории.
+## Running a project in dev mode
 ```
-Регистрация с отправляет письмо с кодом подтверждения на указанный email.
+In the infra folder, run the commands:
+- docker-compose up -d --build 
+- docker-compose exec web python manage.py migrate
+- docker-compose exec web python manage.py collectstatic --no-input
 ```
-### Технологии
+## System requirements
+```
 Python 3.7
 Django 2.2.19
+Djangorestframework 3.12.4
 Docker 20.10.12
-### Запуск локального проекта
 ```
-- В папке infra выполните команду:
-```
-docker-compose up -d --build 
-```
-docker-compose exec web python manage.py migrate
-```
-docker-compose exec web python manage.py collectstatic --no-input
-```
-### Авторы
-Александр, Валентин, Игорь
