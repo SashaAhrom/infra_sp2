@@ -1,7 +1,7 @@
 # infra_sp2(educational project)
 ## Description
 ```
-api_yamdb project expands to Docker
+api_yamdb project deployed to docker
 ```
 ## Running a project in dev mode
 ```
